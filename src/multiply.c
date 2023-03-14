@@ -10,8 +10,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "library.h"
+#include "library.c"
 
-int main(int argc, char *argv[])
+int main(int argc, char *argv[]) //argc -> number of command line arguments passed to the program  ;  argv -> array of strings containing the actual arguments
 {
   int m = 0;
 
@@ -23,9 +24,9 @@ int main(int argc, char *argv[])
   }
 
   // read in ints one at a time and multiply by the 2nd argv value
-  while (scanf("%d", &m) != EOF) 
+  while (scanf("%d", &m) != EOF)//EOF -> End of file (so it loops till its at the end of the file);   m is the integer inputted by user
   {
-    printf("%d\n", multiply(m, atoi(argv[1])));
+    printf("%d\n", multiply(m, atoi(argv[1])));   //atoi converts the second argument which is a str into an integer;  then multiply multiplies m and the 2nd arg
   }
 
   return 0;
