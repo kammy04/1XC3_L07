@@ -14,10 +14,10 @@ test: all
 
 
 	$(BUILD_DIR)/max 4 3 2 1 5 7 8 10 6 > test/max_output.txt
-
 	diff test/max_output.txt test_data/max_expected.txt
+	rm -r test
 
-all: multiply max square library.o
+all: multiply max square
 
 .PHONY: clean
 clean:
