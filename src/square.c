@@ -8,7 +8,6 @@
 *******************************************************************************/
 #include <stdio.h>
 #include "library.h"
-#include "library.c"
 
 int main(int argc, char *argv[])// argc -> count,  argv-> parameter
 {

@@ -10,7 +10,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "library.h"
-#include "library.c"
 
 int main(int argc, char *argv[]) //argc -> number of command line arguments passed to the program  ;  argv -> array of strings containing the actual arguments
 {

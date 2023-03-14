@@ -9,7 +9,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "library.h"
-#include "library.c"
 
 int main(int argc, char *argv[]){
   int myArray[argc - 1];
